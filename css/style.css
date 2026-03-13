@@ -1,0 +1,10 @@
+.espacamento-100px{
+    padding: 100px;
+}
+
+.espacamento-200px{
+    padding: 200px;
+}
+body{
+    background-color: darkblue;
+}
