@@ -4,6 +4,10 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+.espacamento-15px{
+    padding: 15px;
+}
+
 .espacamento-50px{
     padding: 50px;
 }
