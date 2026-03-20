@@ -73,6 +73,7 @@
                     <th>Tempo matriculado</th>
                     <th>Valor pago</th>
                     <th>Situação</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -90,12 +91,13 @@
                     <td>120</td>
                     <td>Araçatuba</td>
                     <td>16010-000</td>
-                    <td>Mensal</td>
+                    <td>Básico</td>
                     <td>01/02/2026</td>
                     <td>01/03/2026</td>
                     <td>1 mês</td>
-                    <td>R$ 120,00</td>
-                     <td><span class="badge bg-success">Ativo</span></td>
+                    <td>R$ 79,99</td>
+                    <td><span class="badge bg-success">Ativo</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro1">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Ana Souza</td>
@@ -111,12 +113,13 @@
                     <td>450</td>
                     <td>Birigui</td>
                     <td>16200-000</td>
-                    <td>Trimestral</td>
+                    <td>Intermediário</td>
                     <td>10/01/2026</td>
                     <td>10/04/2026</td>
                     <td>2 meses</td>
-                    <td>R$ 300,00</td>
+                    <td>R$ 239,98</td>
                     <td><span class="badge bg-success">Ativo</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro2">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Carlos Mendes</td>
@@ -132,12 +135,13 @@
                     <td>89</td>
                     <td>Penápolis</td>
                     <td>16300-000</td>
-                    <td>Anual</td>
+                    <td>Intermediário</td>
                     <td>01/06/2025</td>
                     <td>01/06/2026</td>
                     <td>9 meses</td>
-                    <td>R$ 1200,00</td>
+                    <td>R$ 1.799,91</td>
                     <td><span class="badge bg-danger">Atrasado</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro3">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Mariana Alves</td>
@@ -153,12 +157,13 @@
                     <td>300</td>
                     <td>Araçatuba</td>
                     <td>16015-000</td>
-                    <td>Mensal</td>
+                    <td>Básico</td>
                     <td>01/01/2026</td>
                     <td>01/02/2026</td>
                     <td>1 mês</td>
-                    <td>R$ 120,00</td>
+                    <td>R$ 79,99</td>
                     <td><span class="badge bg-success">Ativo</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro4">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Lucas Ferreira</td>
@@ -174,12 +179,13 @@
                     <td>210</td>
                     <td>Birigui</td>
                     <td>16201-000</td>
-                    <td>Mensal</td>
+                    <td>Premium</td>
                     <td>15/02/2026</td>
                     <td>15/03/2026</td>
                     <td>1 mês</td>
-                    <td>R$ 120,00</td>
+                    <td>R$ 149,99</td>
                     <td><span class="badge bg-success">Ativo</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro5">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Fernanda Costa</td>
@@ -195,17 +201,260 @@
                     <td>500</td>
                     <td>Penápolis</td>
                     <td>16305-000</td>
-                    <td>Trimestral</td>
+                    <td>Premium</td>
                     <td>01/12/2025</td>
                     <td>01/03/2026</td>
                     <td>3 meses</td>
-                    <td>R$ 300,00</td>
+                    <td>R$ 449,97</td>
                     <td><span class="badge bg-success">Ativo</span></td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalRegistro6">Detalhes</button></td>
                 </tr>
             </tbody>
         </table>
         </div>
+    </div>  
+
+
+    <div class="modal fade" id="janelaModalRegistro1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados do João Silva</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: João Carlos da Silva</li>
+                        <li>CPF: 123.456.789-00</li>
+                        <li>Data de nascimento: 15/03/1998 (27 anos)</li>
+                        <li>Sexo: Masculino</li>
+                        <li>Peso: 78kg</li>
+                        <li>Altura: 1.75m</li>
+                        <li>IMC: 25.5</li>
+                        <li>Telefone: (18) 99765-4321</li>
+                        <li>E-mail: joao@gmail.com</li>
+                        <li>Endereço: Rua das Flores, 120  Centro de Araçatuba/SP</li>
+                        <li>CEP: 16010-000</li>
+                        <li>Plano: Básico</li>
+                        <li>Data de início: 01/02/2026</li>
+                        <li>Data de término: 01/03/2026</li>
+                        <li>Tempo matriculado: 1 mês</li>
+                        <li>Valor pago: R$ 79,99</li>
+                        <li>Situação: Ativo</li>
+                        <li>Objetivo: Ganho de massa muscular</li>
+                        <li>Frequência: 4x por semana</li>
+                        <li>Observações: Frequência irregular no início da semana</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="modal fade" id="janelaModalRegistro2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados da Ana Souza</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: Ana Beatriz Souza</li>
+                        <li>CPF: 987.654.321-00</li>
+                        <li>Data de nascimento: 22/07/2000 (25 anos)</li>
+                        <li>Sexo: Feminino</li>
+                        <li>Peso: 62kg</li>
+                        <li>Altura: 1.65m</li>
+                        <li>IMC: 22.8</li>
+                        <li>Telefone: (18) 99123-4567</li>
+                        <li>E-mail: ana@gmail.com</li>
+                        <li>Endereço: Av. Brasil, 450  Jardim América de Birigui/SP</li>
+                        <li>CEP: 16200-000</li>
+                        <li>Plano: Intermediário</li>
+                        <li>Data de início: 10/01/2026</li>
+                        <li>Data de término: 10/04/2026</li>
+                        <li>Tempo matriculado: 2 meses</li>
+                        <li>Valor pago: R$ 239,98</li>
+                        <li>Situação: Ativo</li>
+                        <li>Objetivo: Emagrecimento e definição</li>
+                        <li>Frequência: 5x por semana</li>
+                        <li>Observações: Alta consistência nos treinos</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalRegistro3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados do Carlos Mendes</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: Carlos Eduardo Mendes</li>
+                        <li>CPF: 456.123.789-00</li>
+                        <li>Data de nascimento: 10/11/1995 (30 anos)</li>
+                        <li>Sexo: Masculino</li>
+                        <li>Peso: 90kg</li>
+                        <li>Altura: 1.80m</li>
+                        <li>IMC: 27.8</li>
+                        <li>Telefone: (18) 99888-7777</li>
+                        <li>E-mail: carlos@gmail.com</li>
+                        <li>Endereço: Rua do Comércio, 89  Vila Nova de Penápolis/SP</li>
+                        <li>CEP: 16300-000</li>
+                        <li>Plano: Intermediário</li>
+                        <li>Data de início: 01/06/2025</li>
+                        <li>Data de término: 01/06/2026</li>
+                        <li>Tempo matriculado: 9 meses</li>
+                        <li>Valor pago: R$ 1.799,91</li>
+                        <li>Situação: Atrasado</li>
+                        <li>Objetivo: Hipertrofia</li>
+                        <li>Frequência: 3x por semana</li>
+                        <li>Observações: Pagamento pendente</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalRegistro4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados da Mariana Alves</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: Mariana Cristina Alves</li>
+                        <li>CPF: 741.852.963-00</li>
+                        <li>Data de nascimento: 05/09/1999 (26 anos)</li>
+                        <li>Sexo: Feminino</li>
+                        <li>Peso: 55kg</li>
+                        <li>Altura: 1.60m</li>
+                        <li>IMC: 21.5</li>
+                        <li>Telefone: (18) 99666-5555</li>
+                        <li>E-mail: mariana@gmail.com</li>
+                        <li>Endereço: Rua XV de Novembro, 300  Centro de Araçatuba/SP</li>
+                        <li>CEP: 16015-000</li>
+                        <li>Plano: Básico</li>
+                        <li>Data de início: 01/01/2026</li>
+                        <li>Data de término: 01/02/2026</li>
+                        <li>Tempo matriculado: 1 mês</li>
+                        <li>Valor pago: R$ 79,99</li>
+                        <li>Situação: Ativo</li>
+                        <li>Objetivo: Condicionamento físico</li>
+                        <li>Frequência: 3x por semana</li>
+                        <li>Observações: Frequência regular</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalRegistro5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados do Lucas Ferreira</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: Lucas Henrique Ferreira</li>
+                        <li>CPF: 159.357.258-00</li>
+                        <li>Data de nascimento: 18/12/2002 (23 anos)</li>
+                        <li>Sexo: Masculino</li>
+                        <li>Peso: 70kg</li>
+                        <li>Altura: 1.72m</li>
+                        <li>IMC: 23.7</li>
+                        <li>Telefone: (18) 99222-3333</li>
+                        <li>E-mail: lucas@gmail.com</li>
+                        <li>Endereço: Rua das Palmeiras, 210  Jardim Paulista de Birigui/SP</li>
+                        <li>CEP: 16201-000</li>
+                        <li>Plano: Premium</li>
+                        <li>Data de início: 15/02/2026</li>
+                        <li>Data de término: 15/03/2026</li>
+                        <li>Tempo matriculado: 1 mês</li>
+                        <li>Valor pago: R$ 149,99</li>
+                        <li>Situação: Ativo</li>
+                        <li>Objetivo: Ganho de massa</li>
+                        <li>Frequência: 6x por semana</li>
+                        <li>Observações: Alta frequência de treinos</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalRegistro6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados da Fernanda Costa</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li>Nome completo: Fernanda Oliveira Costa</li>
+                        <li>CPF: 852.741.963-00</li>
+                        <li>Data de nascimento: 30/06/1997 (28 anos)</li>
+                        <li>Sexo: Feminino</li>
+                        <li>Peso: 68kg</li>
+                        <li>Altura: 1.68m</li>
+                        <li>IMC: 24.1</li>
+                        <li>Telefone: (18) 99444-1111</li>
+                        <li>E-mail: fernanda@gmail.com</li>
+                        <li>Endereço: Av. Paulista, 500  Vila Industrial de Penápolis/SP</li>
+                        <li>CEP: 16305-000</li>
+                        <li>Plano: Premium</li>
+                        <li>Data de início: 01/12/2025</li>
+                        <li>Data de término: 01/03/2026</li>
+                        <li>Tempo matriculado: 3 meses</li>
+                        <li>Valor pago: R$ 449,97</li>
+                        <li>Situação: Ativo</li>
+                        <li>Objetivo: Definição muscular</li>
+                        <li>Frequência: 5x por semana</li>
+                        <li>Observações: Boa regularidade e desempenho</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 
     <div class="espacamento-50px"></div>
 
@@ -221,30 +470,113 @@
                     <th>Duração</th>
                     <th>Valor</th>
                     <th>Benefícios</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Plano Mensal</td>
+                    <td>Plano Básico</td>
                     <td>30 dias</td>
-                    <td>R$ 120,00</td>
-                    <td>Acesso livre à academia, musculação e cardio</td>
+                    <td>R$ 79,99</td>
+                    <td>Acesso à musculação, horário limitado</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalPlanos1">Detalhes</button></td>
                 </tr>
                 <tr>
-                    <td>Plano Trimestral</td>
-                    <td>90 dias</td>
-                    <td>R$ 300,00</td>
-                    <td>Acesso completo + avaliação física + desconto em produtos</td>
+                    <td>Plano Intermediário</td>
+                    <td>30 dias</td>
+                    <td>R$ 119,99</td>
+                    <td>Acesso total, horário livre, aulas coletivas</td>
+                     <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalPlanos2">Detalhes</button></td>
                 </tr>
                 <tr>
-                    <td>Plano Anual</td>
-                    <td>365 dias</td>
-                    <td>R$ 1200,00</td>
-                    <td>Acesso total + personal 2x por semana + brindes exclusivos</td>
+                    <td>Plano Premium</td>
+                    <td>30 dias</td>
+                    <td>R$ 149,99</td>
+                    <td>Acesso total, horário livre, aulas coletivas e avaliação física mensal</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalPlanos3">Detalhes</button></td>
                 </tr>
             </tbody>
         </table>
      </div>
+     
+     <div class="modal fade" id="janelaModalPlanos1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Básico</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Duração:</strong> 30 dias</li>
+                        <li><strong>Valor:</strong> R$ 79,99</li>
+                        <li><strong>Acesso:</strong> Apenas musculação</li>
+                        <li><strong>Horário:</strong> Restrito (horário comercial)</li>
+                        <li><strong>Indicado para:</strong> Iniciantes ou quem quer economizar</li>
+                        <li><strong>Limitações:</strong> Não inclui aulas coletivas</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalPlanos2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Intermediário</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Duração:</strong> 30 dias</li>
+                        <li><strong>Valor:</strong> R$ 119,99</li>
+                        <li><strong>Acesso:</strong> Musculação completa</li>
+                        <li><strong>Horário:</strong> Livre</li>
+                        <li><strong>Extras:</strong> Aulas coletivas incluídas (funcional, spinning, etc.)</li>
+                        <li><strong>Indicado para:</strong> Quem quer mais liberdade e variedade</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalPlanos3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Premium</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Duração:</strong> 30 dias</li>
+                        <li><strong>Valor:</strong> R$ 149,99</li>
+                        <li><strong>Acesso:</strong> Total e ilimitado</li>
+                        <li><strong>Horário:</strong> Livre</li>
+                        <li><strong>Extras:</strong> Todas as aulas coletivas</li>
+                        <li><strong>Bônus:</strong> Avaliação física mensal</li>
+                        <li><strong>Indicado para:</strong> Quem quer realmente focar e desfrutar de todas as funções da FitLife</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <div class="espacamento-50px"></div>
 
@@ -253,7 +585,8 @@
      <div class="espacamento-50px"></div>
 
      <div class="container">
-        <table class="table table-light table-striped table-bordered">
+        <div class="table-responsive-md">
+            <table class="table table-light table-striped table-bordered">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -261,6 +594,7 @@
                     <th>Especialidade</th>
                     <th>Telefone</th>
                     <th>Turno</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody>
@@ -270,6 +604,8 @@
                     <td>Musculação</td>
                     <td>(18) 99777-1111</td>
                     <td>Manhã</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalInstrutores1">Detalhes</button></td>
+                    
                 </tr>
                 <tr>
                     <td>Fernanda Rocha</td>
@@ -277,6 +613,7 @@
                     <td>Funcional</td>
                     <td>(18) 99666-2222</td>
                     <td>Tarde</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalInstrutores2">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Lucas Martins</td>
@@ -284,6 +621,7 @@
                     <td>Personal Trainer</td>
                     <td>(18) 99555-3333</td>
                     <td>Noite</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalInstrutores3">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Camila Souza</td>
@@ -291,6 +629,7 @@
                     <td>Pilates</td>
                     <td>(18) 99444-4444</td>
                     <td>Manhã</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalInstrutores4">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Bruno Ferreira</td>
@@ -298,10 +637,152 @@
                     <td>Cross Training</td>
                     <td>(18) 99333-5555</td>
                     <td>Noite</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalInstrutores5">Detalhes</button></td>
                 </tr>
             </tbody>
         </table>
+        </div>
      </div>
+
+     <div class="modal fade" id="janelaModalInstrutores1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Dados do Ricardo Almeida</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>CPF:</strong> 321.654.987-00</li>
+                        <li><strong>Especialidade:</strong> Musculação</li>
+                        <li><strong>Turno:</strong> Manhã</li>
+                        <li><strong>Experiência:</strong> 8 anos na área de treinamento físico</li>
+                        <li><strong>Formação:</strong> Bacharel em Educação Física</li>
+                        <li><strong>Certificações:</strong> Treinamento de hipertrofia e condicionamento físico</li>
+                        <li><strong>Atuação:</strong> Foco em ganho de massa muscular e reabilitação física</li>
+                        <li><strong>Contato:</strong> (18) 99777-1111</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalInstrutores2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Fernanda Rocha</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                         <li><strong>CPF:</strong> 789.123.456-00</li>
+                         <li><strong>Especialidade:</strong> Treinamento Funcional</li>
+                         <li><strong>Turno:</strong> Tarde</li>
+                         <li><strong>Experiência:</strong> 6 anos com foco em funcional e emagrecimento</li>
+                         <li><strong>Formação:</strong> Licenciatura e Bacharelado em Educação Física</li>
+                         <li><strong>Certificações:</strong> Funcional Training e HIIT</li>
+                         <li><strong>Atuação:</strong> Melhora de condicionamento físico, resistência e mobilidade</li>
+                         <li><strong>Contato:</strong> (18) 99666-2222</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalInstrutores3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Lucas Martins</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>CPF:</strong> 159.753.486-00</li>
+                        <li><strong>Especialidade:</strong> Personal Trainer</li>
+                        <li><strong>Turno:</strong> Noite</li>
+                        <li><strong>Experiência:</strong> 10 anos com atendimento personalizado</li>
+                        <li><strong>Formação:</strong> Bacharel em Educação Física</li>
+                        <li><strong>Certificações:</strong> Treinamento personalizado e avaliação física</li>
+                        <li><strong>Atuação:</strong> Treinos individualizados para hipertrofia, emagrecimento e performance</li>
+                        <li><strong>Contato:</strong> (18) 99555-3333</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalInstrutores4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Camila Souza</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>CPF:</strong> 852.456.123-00</li>
+                        <li><strong>Especialidade:</strong> Pilates</li>
+                        <li><strong>Turno:</strong> Manhã</li>
+                        <li><strong>Experiência:</strong> 7 anos em pilates clínico e funcional</li>
+                        <li><strong>Formação:</strong> Educação Física com especialização em Pilates</li>
+                        <li><strong>Certificações:</strong> Pilates Solo e com aparelhos</li>
+                        <li><strong>Atuação:</strong> Reabilitação postural, alongamento e fortalecimento muscular</li>
+                        <li><strong>Contato:</strong> (18) 99444-4444</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalInstrutores5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Bruno Ferreira</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>CPF:</strong> 741.258.963-00</li>
+                        <li><strong>Especialidade:</strong> Cross Training</li>
+                        <li><strong>Turno:</strong> Noite</li>
+                        <li><strong>Experiência:</strong> 9 anos em treinamento de alta intensidade</li>
+                        <li><strong>Formação:</strong> Bacharel em Educação Física</li>
+                        <li><strong>Certificações:</strong> Cross Training, HIIT e condicionamento avançado</li>
+                        <li><strong>Atuação:</strong> Treinos intensivos para resistência, força e emagrecimento</li>
+                        <li><strong>Contato:</strong> (18) 99333-5555</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <div class="espacamento-50px"></div>
 
@@ -317,6 +798,7 @@
                     <th>Categoria</th>
                     <th>Preço</th>
                     <th>Estoque</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody>
@@ -325,40 +807,208 @@
                     <td>Suplemento</td>
                     <td>R$ 149,90</td>
                     <td>50</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto1">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Creatina</td>
                     <td>Suplemento</td>
                     <td>R$ 89,90</td>
                     <td>40</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto2">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Pré-treino</td>
                     <td>Suplemento</td>
                     <td>R$ 99,90</td>
                     <td>18</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto3">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Roupas Fitness</td>
                     <td>Vestuário</td>
                     <td>R$ 79,90</td>
                     <td>30</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto4">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Acessórios (luvas, garrafa)</td>
                     <td>Acessórios</td>
                     <td>R$ 39,90</td>
                     <td>50</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto5">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Tênis Esportivo</td>
                     <td>Calçados</td>
                     <td>R$ 199,90</td>
                     <td>12</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalProduto6">Detalhes</button></td>
                 </tr>
             </tbody>
         </table>
      </div>
+
+     <div class="modal fade" id="janelaModalProduto1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Whey protein</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Suplemento</li>
+                        <li><strong>Preço:</strong> R$ 149,90</li>
+                        <li><strong>Estoque:</strong> 50 unidades</li>
+                        <li><strong>Descrição:</strong> Suplemento proteico de rápida absorção</li>
+                        <li><strong>Benefícios:</strong> Auxilia na recuperação muscular e ganho de massa</li>
+                        <li><strong>Indicação:</strong> Pós-treino</li>
+                        <li><strong>Sabor:</strong> Chocolate, baunilha e morango</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalProduto2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Creatina</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Suplemento</li>
+                        <li><strong>Preço:</strong> R$ 89,90</li>
+                        <li><strong>Estoque:</strong> 40 unidades</li>
+                        <li><strong>Descrição:</strong> Suplemento para aumento de força e desempenho</li>
+                        <li><strong>Benefícios:</strong> Melhora a performance em treinos intensos</li>
+                        <li><strong>Indicação:</strong> Uso diário conforme orientação</li>
+                        <li><strong>Forma:</strong> Pó</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalProduto3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Pré-treino</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Suplemento</li>
+                        <li><strong>Preço:</strong> R$ 99,90</li>
+                        <li><strong>Estoque:</strong> 18 unidades</li>
+                        <li><strong>Descrição:</strong> Suplemento energético para treinos intensos</li>
+                        <li><strong>Benefícios:</strong> Aumenta foco, energia e resistência</li>
+                        <li><strong>Indicação:</strong> Consumir antes do treino</li>
+                        <li><strong>Composição:</strong> Cafeína, beta-alanina e aminoácidos</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalProduto4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Roupas Fitness</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Vestuário</li>
+                        <li><strong>Preço:</strong> R$ 79,90</li>
+                        <li><strong>Estoque:</strong> 30 unidades</li>
+                        <li><strong>Descrição:</strong> Roupas confortáveis para prática esportiva</li>
+                        <li><strong>Benefícios:</strong> Alta respirabilidade e mobilidade</li>
+                        <li><strong>Material:</strong> Poliéster e elastano</li>
+                        <li><strong>Tamanhos:</strong> P, M, G e GG</li>
+                   </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalProduto5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Acessórios</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Acessórios</li>
+                        <li><strong>Preço:</strong> R$ 39,90</li>
+                        <li><strong>Estoque:</strong> 50 unidades</li>
+                        <li><strong>Descrição:</strong> Itens auxiliares para treino</li>
+                        <li><strong>Itens incluídos:</strong> Luvas, garrafas e suportes</li>
+                        <li><strong>Benefícios:</strong> Maior conforto e segurança durante o treino</li>
+                        <li><strong>Material:</strong> Plástico resistente e tecido reforçado</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalProduto6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Tênis esportivo</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Categoria:</strong> Calçados</li>
+                        <li><strong>Preço:</strong> R$ 199,90</li>
+                        <li><strong>Estoque:</strong> 12 unidades</li>
+                        <li><strong>Descrição:</strong> Tênis ideal para atividades físicas</li>
+                        <li><strong>Benefícios:</strong> Amortecimento, estabilidade e conforto</li>
+                        <li><strong>Material:</strong> Tecido respirável e sola emborrachada</li>
+                        <li><strong>Tamanhos:</strong> 38 ao 44</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <div class="espacamento-50px"></div>
 
@@ -367,7 +1017,7 @@
      <div class="espacamento-50px"></div>
 
      <div class="container">
-        <div class="table-responsive-sm">
+        <div class="table-responsive-md">
             <table class="table table-light table-striped table-bordered">
             <thead>
                 <tr>
@@ -376,6 +1026,7 @@
                     <th>Quantidade</th>
                     <th>Estado</th>
                     <th>Localização</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody>
@@ -385,6 +1036,7 @@
                     <td>10</td>
                     <td><span class="badge bg-success">Bom</span></td>
                     <td>Área Cardio</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento1">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Bicicleta Ergométrica</td>
@@ -392,6 +1044,7 @@
                     <td>8</td>
                     <td><span class="badge bg-success">Bom</span></td>
                     <td>Área Cardio</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento2">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Supino Reto</td>
@@ -399,6 +1052,7 @@
                     <td>4</td>
                     <td><span class="badge bg-warning text-dark">Usado</span></td>
                     <td>Sala de Musculação</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento3">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Leg Press</td>
@@ -406,6 +1060,7 @@
                     <td>3</td>
                     <td><span class="badge bg-success">Bom</span></td>
                     <td>Sala de Musculação</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento4">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Crossover</td>
@@ -413,6 +1068,7 @@
                     <td>2</td>
                     <td><span class="badge bg-danger">Manutenção</span></td>
                     <td>Sala de Musculação</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento5">Detalhes</button></td>
                 </tr>
                 <tr>
                     <td>Halteres</td>
@@ -420,11 +1076,174 @@
                     <td>20</td>
                     <td><span class="badge bg-success">Bom</span></td>
                     <td>Sala de Musculação</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModalEquipamento6">Detalhes</button></td>
                 </tr>
             </tbody>
         </table>
         </div>
      </div>
+
+     <div class="modal fade" id="janelaModalEquipamento1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Esteira</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Cardio</li>
+                        <li><strong>Quantidade:</strong> 10 unidades</li>
+                        <li><strong>Estado:</strong> Bom</li>
+                        <li><strong>Localização:</strong> Área Cardio</li>
+                        <li><strong>Função:</strong> Exercícios de caminhada e corrida</li>
+                        <li><strong>Benefícios:</strong> Melhora do condicionamento cardiovascular e queima calórica</li>
+                        <li><strong>Características:</strong> Controle de velocidade, inclinação e monitor cardíaco</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalEquipamento2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Bicicleta Ergométrica</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Cardio</li>
+                        <li><strong>Quantidade:</strong> 8 unidades</li>
+                        <li><strong>Estado:</strong> Bom</li>
+                        <li><strong>Localização:</strong> Área Cardio</li>
+                        <li><strong>Função:</strong> Exercícios de pedalada estacionária</li>
+                        <li><strong>Benefícios:</strong> Fortalecimento das pernas e melhora da resistência</li>
+                        <li><strong>Características:</strong> Ajuste de carga, banco regulável e monitor digital</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalEquipamento3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Supino reto</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Musculação</li>
+                        <li><strong>Quantidade:</strong> 4 unidades</li>
+                        <li><strong>Estado:</strong> Usado</li>
+                        <li><strong>Localização:</strong> Sala de Musculação</li>
+                        <li><strong>Função:</strong> Exercícios para peitoral, ombros e tríceps</li>
+                        <li><strong>Benefícios:</strong> Ganho de força e massa muscular</li>
+                        <li><strong>Observação:</strong> Equipamento com sinais de uso, porém funcional</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalEquipamento4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Leg press</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Musculação</li>
+                        <li><strong>Quantidade:</strong> 3 unidades</li>
+                        <li><strong>Estado:</strong> Bom</li>
+                        <li><strong>Localização:</strong> Sala de Musculação</li>
+                        <li><strong>Função:</strong> Exercícios para membros inferiores</li>
+                        <li><strong>Benefícios:</strong> Fortalecimento de quadríceps, glúteos e posteriores</li>
+                        <li><strong>Características:</strong> Plataforma inclinada e suporte para cargas elevadas</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalEquipamento5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Crossover</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Musculação</li>
+                        <li><strong>Quantidade:</strong> 2 unidades</li>
+                        <li><strong>Estado:</strong> Em manutenção</li>
+                        <li><strong>Localização:</strong> Sala de Musculação</li>
+                        <li><strong>Função:</strong> Exercícios variados com cabos</li>
+                        <li><strong>Benefícios:</strong> Treino completo de membros superiores e inferiores</li>
+                        <li><strong>Observação:</strong> Equipamento temporariamente indisponível para uso</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="janelaModalEquipamento6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Halteres</h3>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo:</strong> Musculação</li>
+                        <li><strong>Quantidade:</strong> 20 unidades</li>
+                        <li><strong>Estado:</strong> Bom</li>
+                        <li><strong>Localização:</strong> Sala de Musculação</li>
+                        <li><strong>Função:</strong> Exercícios livres para diversos grupos musculares</li>
+                        <li><strong>Benefícios:</strong> Versatilidade no treino e desenvolvimento muscular equilibrado</li>
+                        <li><strong>Peso:</strong> Variado (de 2kg a 30kg)</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <div class="espacamento-50px"></div>
 

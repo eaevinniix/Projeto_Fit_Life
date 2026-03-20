@@ -103,6 +103,24 @@
 
                 </div>     
 
+                <div class="mb-3 mt-3">
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Qual o seu objetivo?</label>
+                            <textarea class="form-control" rows="3" placeholder="Ex: ganahr massa muscular, emagrecer, melhor condicionamento..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Possui alguma limitação ou problema de saúde?</label>
+                            <textarea class="form-control" rows="3" placeholder="Ex: Lesões, dores, problemas cardíacos, etc..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
                     <hr class="my-4">
 
                     <h5 class="mb-3 text-primary">Endereço</h5>
@@ -261,25 +279,26 @@
                     <hr class="my-4">
 
                      <div class="d-grid">
-                        <button type="submit" class="btn btn-success btn-lg" id="#modal">
+                        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#FinalizarMatricula">
                             <i class="bi bi-check-circle"></i> Finalizar Matrícula
                         </button>
                     </div>
 
-                    <div class="modal" tabindex="-1">
+                    <div class="modal fade" id="FinalizarMatricula">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="#modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Modal body text goes here.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
+                                <div class="modal-header">
+                                    <h6 class="display-6 fw-bold text-dark text-center">Matricula realizada <strong class="text-primary"> com sucesso!</strong></h6>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">
+                                        Seja bem-vindo à <strong class="text-primary">FitLife</strong>, onde sua evolução começa de verdade.<br>
+                                        Prepare-se para superar limites, conquistar resultados e virar sua melhor versão!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
