@@ -47,9 +47,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 
-                <h2 class="text-center mb-4">
-                    Ficha de Matrícula
-                </h2>
+                <h2 class="text-center mb-4 display-3">Ficha de <strong class="text-primary"> matrícula</strong></h2>
 
                 <form class="card p-4 shadow-sm">
                     
@@ -82,30 +80,72 @@
                         </div>
                     </div>
 
+                <div class="row">
+                    <div class="col-6">
+                        <label for="" class="form-label">Sexo</label>
+                            <select class="form-select">
+                                <option value="masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                                <option value="prefironirformar">Prefiro não Informar</option>
+                            </select>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="" class="form-label">Estado Civil</label>
+                            <select class="form-select">
+                                <option value="masculino">Solteiro</option>
+                                <option value="Feminino">Casado</option>
+                                <option value="outro">Viúvo</option>
+                                <option value="prefironirformar">Divorciado</option>
+                            </select>
+                    </div>
+
+                </div>     
+
                     <hr class="my-4">
 
                     <h5 class="mb-3 text-primary">Endereço</h5>
                     
                     <div class="row mb-3">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <label class="form-label">CEP</label>
                             <input type="text" class="form-control" placeholder="00000-000">
                         </div>
-                        <div class="col-md-8">
-                            <label class="form-label">Rua</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
 
-                    <div class="row mb-3">
-                        <div class="col-md-4">
-                            <label class="form-label">Número</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label">Bairro</label>
-                            <input type="text" class="form-control">
-                        </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Cidade</label>
+                                    <select class="form-select">
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                            </div>
+
                             <div class="col-4">
                                 <label for="" class="form-label">Cidade</label>
                                     <select class="form-select">
@@ -130,28 +170,118 @@
                                         <option value="Natal">Natal</option>
                                         <option value="Porto Alegre">Porto Alegre</option>
                                     </select>
-                                </div>
                             </div>
+                        </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Bairro</label>
+                            <input type="text" class="form-control">
+                        </div>
 
-                    <hr class="my-4">
+                        <div class="col-4">
+                            <label class="form-label">Rua</label>
+                            <input type="text" class="form-control">
+                        </div>
 
-                    <h5 class="mb-3 text-primary">Plano</h5>
-                    
-                    <div class="mb-3">
-                        <select class="form-select">
-                            <option selected>Escolha seu plano...</option>
-                            <option value="1">Básico - R$ 79,90/mês</option>
-                            <option value="2">Intermediário - R$ 119,90/mês</option>
-                            <option value="3">Premium - R$ 159,90/mês</option>
-                        </select>
+                        <div class="col-md-4">
+                            <label class="form-label">Número</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        
                     </div>
 
                     <hr class="my-4">
 
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-success btn-lg">
+                    <h5 class="mb-3 text-dark text-center display-5">Escolha o seu <strong class="text-primary">plano</strong></h5>
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header text-bg-primary text-center fw-bold">Básico</div>
+                                <div class="card-body text-center">
+                                    <h5 class="fs-3 fw-bold text-primary">R$ 79,99</h5>
+                                    <p class="text-muted">/Mês</p>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Acesso à musculação</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Horário limitado</li>
+                                        <li><i class="bi bi-x-circle-fill text-danger"></i>Sem aulas coletivas</li>
+                                        <li><i class="bi bi-x-circle-fill text-danger"></i>Sem avaliação física</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="plano" id="planobasico" value="basico">
+                                        <label class="form-check-label" for="planobasico">Selecionar</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header text-bg-success text-center fw-bold">Intermediário <span class="badge text-bg-warning">Popular</span></div>
+                                <div class="card-body">
+                                    <h5 class="fs-3 fw-bold text-success text-center">R$ 119,99</h5>
+                                    <p class="text-muted text-center">/Mês</p>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Acesso total</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Horário livre</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Aulas coletives</li>
+                                        <li><i class="bi bi-x-circle-fill text-danger"></i>Sem avaliação física</li>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="plano" id="planointermediario" value="intermediario">
+                                        <label class="form-check-label" for="planointermediario">Selecionar</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header text-bg-warning text-center fw-bold">Premium</div>
+                                <div class="card-body">
+                                    <h5 class="fs-3 fw-bold text-warning text-center">R$ 149,99</h5>
+                                    <p class="text-muted text-center">/Mês</p>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Acesso total</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Horário livre</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Aulas coletives</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i>Avaliação física mensal</li>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="plano" id="planopremium" value="premium">
+                                        <label class="form-check-label" for="planoPremium">Selecionar</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                     <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg" id="#modal">
                             <i class="bi bi-check-circle"></i> Finalizar Matrícula
                         </button>
+                    </div>
+
+                    <div class="modal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="#modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
 
                 </form>
