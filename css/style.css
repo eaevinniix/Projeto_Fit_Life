@@ -34,3 +34,9 @@ body{
     height: 400px;
     width: 100%;
 }
+
+.img-loja {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
